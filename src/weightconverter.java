@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+// learning if-else here.
 public class weightconverter {
     static void main() {
 

@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+//learning ternary operators here.
+
 public class tempconv {
     static void main() {
 

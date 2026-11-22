@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 // compound interest calculator
+//learning some basic math in java.
 
 public class compoundinterest {
     static void main(String[] args) {

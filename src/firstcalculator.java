@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+//my first somewhat-useful-program!
+//calculator!
+// learning enhanced switches in java.
+
 public class firstcalculator {
     static void main() {
         // CALCULATOR

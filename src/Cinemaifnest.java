@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Cinemaifnest {
     static void main(String[] args) {
 
+        // learning nested if statemnts.
         boolean isStudent;
         boolean isSenior;
         double price = 9.99;

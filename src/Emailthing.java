@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+//learning string methods.
+
 public class Emailthing {
     static void main(String[] args) {
 

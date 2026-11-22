@@ -1,6 +1,8 @@
 import java.util.Scanner;
 import java.util.Random;
 
+//learning while loops here.
+
 public class guessnumber {
     static void main() {
 
@@ -40,10 +42,10 @@ public class guessnumber {
 
             if(showHints){
                 if(guess > randomnum){
-                    System.out.println("Your guess is too high!");
+                    System.out.println("TOO HIGH.");
                 }
                 else if(guess < randomnum){
-                    System.out.println("Your guess is too low!");
+                    System.out.println("TOO LOW.");
                 }
             }
         }
