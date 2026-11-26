@@ -52,10 +52,11 @@ public class RPGLite {
         int enemyHealth = random.nextInt(90, 111);
         int playerHealth = random.nextInt(90, 111);
         int healing = random.nextInt(30, 51);
-        gameItself(enemyHealth, playerHealth, healing);
+        int potions = 2;
+        gameItself(enemyHealth, playerHealth, healing, potions);
     }
     // holy spaghetti code :sob:
-    static void gameItself(int enemyHealth, int playerHealth, int healing){
+    static void gameItself(int enemyHealth, int playerHealth, int healing, int potions){
 
         boolean isBattling = true;
 
@@ -82,8 +83,14 @@ public class RPGLite {
                     System.out.printf("You have attacked the Goblin! Goblin health: %d\n", enemyHealth);
                 }
                 case 2 -> {
-                    playerHealth += healing;
-                    System.out.printf("You have healed! Your health: %d\n", playerHealth);
+                    if(potions > 0){
+                        playerHealth += healing;
+                        potions--;
+                        System.out.printf("Successfully healed! %d potion(s) left.", potions);
+                    }
+                    else{
+                        System.out.println("Out of potions!");
+                    }
                 }
                 case 3 -> {
                     isBattling = false;
@@ -109,5 +116,4 @@ public class RPGLite {
 
 
     }
-
 }
